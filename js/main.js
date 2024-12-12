@@ -18,11 +18,15 @@ function showTime() {
   m = m < 10 ? "0" + m : m;
   s = s < 10 ? "0" + s : s;
 
+  // "시간", "분", "초" 추가
   var time = h + ":" + m + ":" + s + " " + session;
-  document.getElementById("MyClockDisplay").innerText = time;
-  document.getElementById("MyClockDisplay").textContent = time;
+  document.getElementById("hours").innerText = h;
+  document.getElementById("minutes").innerText = m;
+  document.getElementById("seconds").innerText = s;
+  document.getElementById("session").innerText = session;
 
   setTimeout(showTime, 1000);
 }
 
-showTime();
+// 페이지가 로드되면 showTime() 실행
+document.addEventListener("DOMContentLoaded", showTime);

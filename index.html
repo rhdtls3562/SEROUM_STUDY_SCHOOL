@@ -32,7 +32,28 @@
         <li><a href="#">레벨테스트</a></li>
         <li><a href="#">새로움후기</a></li>
         <li><a href="#">F&Q/이벤트</a></li>
-        <li><i class="fa-solid fa-bars"></i></li>
+        <li>
+          <div class="container">
+            <h1>Click The Menu</h1>
+            <p>Be Amazed</p>
+            <!-- Everything below this is part of the menu -->
+          </div>
+          <div id="toggle" class="button_container">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </div>
+          <div id="overlay" class="overlay">
+            <nav class="overlay-menu">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </li>
       </ul>
     </div>
     <div id="visual">
@@ -47,9 +68,24 @@
           <li><p>19만원 19패스 기간 한정 특별 판매!</p></li>
           <li>12/16(월)해택 마감</li>
           <li>
-            <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+            <div id="MyClockDisplay" class="clock">
+              <div class="time-box" id="hours">00</div>
+              <div class="colon">:</div>
+              <div class="time-box" id="minutes">00</div>
+              <div class="colon">:</div>
+              <div class="time-box" id="seconds">00</div>
+              <span id="session">AM</span>
+            </div>
           </li>
+          <li>지금 즉시 등록하기</li>
         </ul>
+      </section>
+      <section class="con2">
+        <h2><span>우리 아이</span>학습 성장을 막고 있는 고민들...</h2>
+        <img src="img/con2_bubble1.png" />
+        <img src="img/con2_bubble2.png" />
+        <img src="img/con2_bubble3.png" />
+        <img src="img/con2_bubble4.png" />
       </section>
     </div>
     <div id="footer"></div>
