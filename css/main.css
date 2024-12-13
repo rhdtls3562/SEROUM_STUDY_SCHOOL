@@ -15,6 +15,7 @@ body {
 }
 
 .topmenu {
+  font-size: 1vw;
   align-items: center;
   padding: 0.3vw 3vw;
   display: flex;
@@ -472,16 +473,17 @@ body {
 .value {
   position: absolute;
   bottom: 25%;
-  left: 51%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .cir {
-  z-index: 999;
-  position: absolute;
-  bottom: -20%;
-  left: 53%;
+  top: 68%;
+  left: 52%;
   transform: translate(-50%, -50%);
+  position: absolute;
+  width: 18vw;
+  height: 18vw; /* 비율 유지 */
 }
 
 /*con5*/
@@ -538,7 +540,7 @@ body {
 
 .line {
   position: absolute;
-  top: 48%;
+  top: 11.2rem;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 75%;
@@ -555,4 +557,223 @@ body {
 .con6 p {
   font-size: 1vw;
   color: #555;
+}
+
+/*con7*/
+
+.con7 {
+  padding-top: 3vw;
+  box-sizing: border-box;
+  background-image: url(../img/main_back.jpg);
+  background-size: cover;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 150vh;
+  text-align: center;
+}
+
+.con7 h5 {
+  margin-bottom: 1vw;
+  font-size: 2vw;
+  font-weight: 200;
+  letter-spacing: 5px;
+}
+
+.con7 h2 {
+  margin-bottom: 1vw;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 4vw;
+  font-weight: 900;
+}
+
+.con7 p {
+  font-size: 1.2vw;
+  margin: auto;
+  width: 25%;
+}
+
+.con7 p span {
+  color: #ff7b00;
+  font-weight: 700;
+}
+
+.teacher1 {
+  width: 80%;
+}
+
+.teacher2 {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 70%;
+}
+
+.book {
+  width: 105%;
+  top: 90%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+/*con8*/
+
+.con8 {
+  padding: 1vw;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+
+.con8 h4 {
+  letter-spacing: -1px;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.con8 span {
+  font-weight: 800;
+  color: #ff7b00;
+}
+
+/*con9*/
+
+.con9 {
+  padding-top: 2vw;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.con9 p {
+  font-size: 0.8vw;
+  width: 70%;
+  bottom: 20%;
+  left: -65%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: #fff;
+}
+
+.con9 h2 {
+  font-size: 2vw;
+  letter-spacing: -1px;
+  width: 100%;
+  bottom: 30%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: #fff;
+}
+
+.swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  position: relative !important;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 20vw;
+  border-radius: 1vw;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.05);
+}
+
+/*footer*/
+
+#footer {
+  height: 50vh;
+  width: 100%;
+}
+
+#footer span {
+  font-weight: 700;
+}
+
+.fot1 {
+  padding: 1vw;
+  background-color: #ddd;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fot1 li {
+  cursor: pointer;
+}
+
+#footer .logo {
+  padding: 2vw 2vw 1vw 10vw;
+  box-sizing: border-box;
+  width: 20%;
+  filter: grayscale(60%) brightness(50%);
+}
+
+.fot2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 0vw 10vw;
+  box-sizing: border-box;
+}
+
+.fot6 {
+  display: flex;
+  justify-content: right;
+}
+
+.fot2 li {
+  width: 60%;
+}
+
+.fot4 > li {
+  font-size: 1vw;
+  line-height: 1.5vw;
+  color: #555;
+}
+
+.fot4 > li span {
+  display: block;
+  padding-top: 3vw;
+}
+
+.fot3 {
+  display: flex;
+  justify-content: left;
+  gap: 2vw;
+}
+
+.fot3 li {
+  text-wrap: nowrap;
+  cursor: pointer;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.fot5 {
+  margin-bottom: 2vw;
+  display: flex;
+  gap: 1vw;
+  justify-content: left;
+}
+
+.fot5 li {
+  cursor: pointer;
 }
