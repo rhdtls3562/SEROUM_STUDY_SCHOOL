@@ -453,7 +453,7 @@ body {
   padding: 3vw;
   box-sizing: border-box;
   width: 100%;
-  height: 200vh;
+  height: 190vh;
 }
 
 .con2 li {
@@ -488,4 +488,398 @@ body {
 .gradeition {
   display: block;
   width: 100%;
+}
+
+.gra li:nth-child(1) {
+  position: relative;
+}
+
+.gra_txt {
+  color: #fff;
+  z-index: 999;
+  position: absolute;
+  top: 55%;
+  left: 39%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.gra_txt span {
+  font-size: 1.5vw;
+
+  font-weight: bolder;
+}
+
+.gra_txt li:nth-child(1) {
+  font-size: 1.5vw;
+  font-weight: bolder;
+  width: 30%;
+}
+
+.gra_txt li:nth-child(2) {
+  width: 60%;
+}
+
+.gra_txt li {
+  letter-spacing: -1px;
+  width: 50%;
+}
+
+/*con3*/
+
+.con3 {
+  padding: 3vw;
+  box-sizing: border-box;
+  background-image: url(../img/brand_con3_back.png);
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  background-color: #ff7b00;
+
+  text-align: center;
+}
+
+.con3 h2 {
+  font-size: 3vw;
+  color: #fff;
+  letter-spacing: -1px;
+}
+
+.con3 h4 {
+  width: 100%;
+  z-index: 999;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 1.5vw;
+}
+
+.con3 h4 span {
+  font-weight: bolder;
+  font-size: 1.9vw;
+}
+
+.swiper {
+  background-color: rgba(255, 174, 92, 0.5);
+  margin-top: 3vw;
+  border-radius: 3vw;
+  height: 35vw;
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.text_wrap {
+  margin: 2vw auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: inline-block;
+  width: 50%;
+}
+
+.swiper-slide-active {
+  margin-left: -0vw !important;
+}
+
+.swiper {
+  position: relative;
+  width: 50%;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.con3 .logo {
+  margin-top: 3vw;
+  margin-bottom: 1vw;
+}
+
+.con3 h5 {
+  margin-top: 7.5vw;
+  margin-bottom: 1vw;
+  font-size: 1.5vw;
+}
+
+.con3 ul {
+  align-items: center;
+  color: #222;
+  display: flex;
+  justify-content: center;
+}
+
+.vs {
+  z-index: 999;
+  font-weight: 900;
+  font-size: 2vw;
+  position: absolute;
+  left: 50%;
+  bottom: 40%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.other {
+  filter: brightness(50%);
+}
+
+.con3 h6 {
+  top: 5%;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  color: #fff;
+  letter-spacing: -1px;
+  font-size: 1.4vw;
+  font-weight: normal;
+}
+
+.con3 span {
+  font-weight: 700;
+}
+
+.con3 ul li h2 {
+  align-items: center;
+  color: #222;
+}
+
+.swiper-pagination {
+  padding-bottom: 1.5vw;
+  box-sizing: border-box;
+  color: #fff !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 2vw !important;
+  border-radius: 1vw !important;
+}
+
+:root {
+  --swiper-theme-color: #fff !important;
+}
+
+/*con4*/
+
+.con4 {
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  width: 30%;
+  height: 40vh;
+}
+
+.logo_4 {
+  width: 40%;
+  filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(0deg); /* 주황색 필터 */
+}
+
+.con4 h2 {
+  margin: 1vw auto;
+  width: 67%;
+}
+
+/*hero*/
+
+.hero-section {
+  align-items: flex-start;
+  background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+}
+
+@media (min-width: 540px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card2 {
+  list-style: none;
+  position: relative;
+}
+
+.card2:before {
+  content: "";
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.card__background {
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
+}
+
+.card2:hover .card__background {
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card2:not(:hover) .card__background {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card__content {
+  color: #fff;
+  text-align: center;
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+}
+
+.card__category {
+  font-size: 1.5vw !important;
+  padding: 3vw;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-s);
+  text-transform: uppercase;
+}
+
+.card__heading {
+  width: 80%;
+  margin: auto;
+  color: var(--text-lighter);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  line-height: 1.4;
+}
+
+/*footer*/
+
+#footer {
+  height: 50vh;
+  width: 100%;
+}
+
+#footer span {
+  font-weight: 700;
+}
+
+.fot1 {
+  padding: 1vw;
+  background-color: #ddd;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fot1 li {
+  cursor: pointer;
+}
+
+#footer .logo {
+  padding: 2vw 2vw 1vw 10vw;
+  box-sizing: border-box;
+  width: 20%;
+  filter: grayscale(60%) brightness(50%);
+}
+
+.fot2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 0vw 10vw;
+  box-sizing: border-box;
+}
+
+.fot6 {
+  display: flex;
+  justify-content: right;
+}
+
+.fot2 li {
+  width: 60%;
+}
+
+.fot4 > li {
+  font-size: 1vw;
+  line-height: 1.5vw;
+  color: #555;
+}
+
+.fot4 > li span {
+  display: block;
+  padding-top: 3vw;
+}
+
+.fot3 {
+  display: flex;
+  justify-content: left;
+  gap: 2vw;
+}
+
+.fot3 li {
+  text-wrap: nowrap;
+  cursor: pointer;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.fot5 {
+  margin-bottom: 2vw;
+  display: flex;
+  gap: 1vw;
+  justify-content: left;
+}
+
+.fot5 li {
+  cursor: pointer;
 }
