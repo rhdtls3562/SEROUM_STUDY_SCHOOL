@@ -123,7 +123,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $(".menubar").click(function () {
+    $(".menu").click(function () {
       $(".side-menu").toggleClass("open"); // 사이드 메뉴 열기/닫기
       $(".overlay").toggleClass("open"); // 오버레이 열기/닫기
     });
@@ -135,7 +135,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $(".menubar").click(function () {
+    $(".menu").click(function () {
       $(this).toggleClass("open");
     });
   });
@@ -183,6 +183,33 @@ $(document).ready(function () {
     };
   }
 
+  var Menu = {
+    el: {
+      ham: $(".menu"),
+      menuTop: $(".menu-top"),
+      menuMiddle: $(".menu-middle"),
+      menuBottom: $(".menu-bottom"),
+    },
+
+    init: function () {
+      Menu.bindUIactions();
+    },
+
+    bindUIactions: function () {
+      Menu.el.ham.on("click", function (event) {
+        Menu.activateMenu(event);
+        event.preventDefault();
+      });
+    },
+
+    activateMenu: function () {
+      Menu.el.menuTop.toggleClass("menu-top-click");
+      Menu.el.menuMiddle.toggleClass("menu-middle-click");
+      Menu.el.menuBottom.toggleClass("menu-bottom-click");
+    },
+  };
+
+  Menu.init();
   function describeArc(x, y, radius, angle) {
     var endProgress = angle;
     var start = polarToCartesian(x, y, radius, endProgress);

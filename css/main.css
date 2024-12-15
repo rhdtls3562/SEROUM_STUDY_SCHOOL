@@ -40,6 +40,48 @@ body {
   color: #fff;
 }
 
+.menu {
+  cursor: pointer;
+  margin: 0 auto;
+  padding-left: 1.25em;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+.menu-global {
+  border-radius: 3vw;
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 5.5px solid white;
+  width: 100%;
+  transition: 0.55s;
+}
+.menu-top {
+  top: 0;
+}
+.menu-middle {
+  top: 13px;
+}
+.menu-bottom {
+  top: 26px;
+}
+.menu-top-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(50deg);
+  transition: 0.55s 0.5s;
+}
+.menu-middle-click {
+  opacity: 0;
+}
+.menu-bottom-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(-410deg);
+  transition: 0.55s 0.5s;
+}
+
 /* 사이드 메뉴 */
 .side-menu {
   overflow: hidden;
