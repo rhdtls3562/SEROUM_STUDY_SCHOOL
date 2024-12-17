@@ -360,14 +360,14 @@ body {
 }
 
 .con3 ul li:nth-child(2) span {
-  color: #006eff;
+  color: #ff7b00;
 }
 
 .equar {
   margin-right: 1vw;
   padding: 0vw 0.4vw;
   border-radius: 50%;
-  background-color: #006eff;
+  background-color: #ff7b00;
   color: #fff !important;
 }
 
@@ -376,7 +376,7 @@ body {
   padding: 0.7vw 1vw;
   border-radius: 3vw;
   box-sizing: border-box;
-  background-color: #e9f3ff;
+  background-color: #fff2e6;
 }
 
 .con3 ul {
@@ -389,11 +389,14 @@ body {
 /*con4*/
 
 .con4 {
+  padding: 3vw;
+  box-sizing: border-box;
+  background-color: #fff2e6;
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 150vh;
+  height: 100vh;
 }
 
 .con4 h2 {
@@ -403,11 +406,17 @@ body {
 }
 
 .con4 h5 span {
-  color: #006eff;
+  color: #ff7b00;
 }
 
-.con5 h5 {
-  font-size: 1.5vw;
+.con4 i {
+  margin-right: 0.5vw;
+  color: #ff7b00;
+}
+
+.con4 h5 {
+  font-size: 1vw;
+  margin-bottom: 1vw;
 }
 
 .con4 ul {
@@ -415,6 +424,103 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-around;
+}
+
+.text_wrap {
+  border-radius: 1vw;
+  box-sizing: border-box;
+  padding: 1vw;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.text_wrap h4 {
+  line-height: 2vw;
+}
+
+.text_wrap span {
+  color: #ff7b00;
+}
+
+/*con5*/
+
+.con5 {
+  padding: 2vw;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  text-wrap: nowrap;
+}
+
+.con5 h3 {
+  font-size: 1vw;
+  width: 100%;
+}
+
+.con5 p {
+  font-weight: 700;
+  color: #ff7b00;
+  font-size: 0.7vw;
+}
+
+.con5 ul {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+
+/*con6*/
+
+.con6 {
+  background-color: #f0f0f0;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.con6 h2 span {
+  color: #ff7b00;
+}
+
+.con6 h2 {
+  line-height: 2vw;
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+  box-sizing: border-box;
+  margin: auto;
+  font-size: 1.5vw;
+}
+
+.con6 p {
+  margin: auto;
+  width: 20%;
+}
+
+.swiper {
+  margin-top: 3vw;
+  width: 240px;
+  height: 320px;
+}
+
+.swiper img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.1);
 }
 
 /*footer*/

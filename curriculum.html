@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="css/curriculum.css" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
@@ -172,25 +176,89 @@
             <img src="img/curricurrum_hand.png" />
           </li>
           <li>
-            <h2>학력 진단테스트</h2>
-            <h5><span>학년별 9LEVEL 114종</span>의 다양한 테스트지</h5>
+            <h2>계산력 진단테스트</h2>
+            <h5><span>A부터I까지 단계별 계산력 테스트</span>계산력 테스트</h5>
             <div class="text_wrap">
               <h4>
                 <i class="fa-solid fa-circle-check"></i>
-                <span>원생의 학습 수준 파악 용이</span>
+                기초계산력 수준 파악 필수 테스트
               </h4>
               <h4>
                 <i class="fa-solid fa-circle-check"></i>
-                학기 기준 / 최근 학습 단원 기준 테스트로 수준별 반편성 기준 제시
+                속도성과 정확성 측정을 통해 <span>개인별</span> 연산 능력 확인
               </h4>
               <h4>
                 <i class="fa-solid fa-circle-check"></i>
-                테스트 결과에 따른 분석표를 통해 학무모 상담까지
-                <span>완벽하게 OK!</span>
+                테스트 결과 분석을 통해 개인별 맞춤 Start Point 제시
               </h4>
             </div>
           </li>
         </ul>
+      </section>
+      <section class="con5">
+        <ul>
+          <li>
+            <img src="img/medal1.png" />
+            <h3>KTC수학경시대회 특허 등록</h3>
+            <p>[빅데이터 기반 수학문제 제공]</p>
+          </li>
+          <li>
+            <img src="img/medal2.png" />
+            <h3>문제은행 시스템 특허 등록</h3>
+            <p>[학습자 맞춤형 수학문제 출제 로직]</p>
+          </li>
+          <li>
+            <img src="img/medal3.png" />
+            <h3>2024 고객만족 브랜드 대상</h3>
+            <p>[2년 연속 수상, 수학문제은행 부문 1위]</p>
+          </li>
+          <li>
+            <img src="img/medal4.png" />
+            <h3>경영혁신형 중소기업 인증</h3>
+            <p>Management Innovation Business</p>
+          </li>
+          <li>
+            <img src="img/medal5.png" />
+            <h3>품질경영시스템 인증</h3>
+            <p>[ISO 9001:2015]</p>
+          </li>
+          <li>
+            <img src="img/medal6.png" />
+            <h3>대한민국 교육브랜드 대상</h3>
+            <p>[3년 연속 수상,수학교육 부문]</p>
+          </li>
+          <li>
+            <img src="img/medal7.png" />
+            <h3>한국기록원 기네스 선정</h3>
+            <p>[가평점 런칭 최다 개설]</p>
+          </li>
+          <li>
+            <img src="img/medal8.png" />
+            <h3>KTC수학경시대회 특허 등록</h3>
+            <p>[빅데이터 기반 수학문제 제공]</p>
+          </li>
+        </ul>
+      </section>
+      <section class="con6">
+        <h2><span>새로움학원</span><br />모집 프로그램</h2>
+        <p>
+          "대성의 N수, 차이를 넘어 차원이 다르다!"<br /><span
+            >대성학원은 매년 달라지는 새로운 입시제도에 맞춰 시즌별로 모집
+            프로그램을 운영하고 있습니다.</span
+          >
+        </p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/swiper_img_1.jpg" /></div>
+            <div class="swiper-slide"><img src="img/swiper_img_2.jpg" /></div>
+            <div class="swiper-slide"><img src="img/swiper_img_3.jpg" /></div>
+            <div class="swiper-slide"><img src="img/swiper_img_4.jpg" /></div>
+            <div class="swiper-slide"><img src="img/swiper_img_5.jpg" /></div>
+          </div>
+        </div>
+      </section>
+      <section class="con7">
+        
       </section>
     </div>
     <div id="footer">
@@ -242,5 +310,18 @@
         </li>
       </ul>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards", // 카드 효과
+        grabCursor: true, // 드래그할 수 있도록 커서 표시
+        loop: true, // 무한 루프
+        autoplay: {
+          // 자동 슬라이드
+          delay: 2500, // 2.5초마다 자동으로 슬라이드 변경
+          disableOnInteraction: false, // 사용자가 슬라이드를 넘기면 자동 슬라이드 다시 시작
+        },
+      });
+    </script>
   </body>
 </html>
