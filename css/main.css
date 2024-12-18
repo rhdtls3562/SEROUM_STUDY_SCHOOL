@@ -582,7 +582,7 @@ body {
 
 .line {
   position: absolute;
-  top: 11.2rem;
+  top: 11.5vw;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 75%;
