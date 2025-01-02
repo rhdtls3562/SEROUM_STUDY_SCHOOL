@@ -286,7 +286,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 34.5%;
+  left: 32%;
   width: 12%;
   animation: blink 2s both infinite;
 }
@@ -303,15 +303,584 @@ body {
   }
 }
 
-.con2 {
-  width: 100%;
-  height: 120vh;
-}
+/*con2*/
 
-.con2 ul {
+.con2 {
   display: flex;
   justify-content: center;
-  gap: 2vw;
+  flex-direction: column;
+  letter-spacing: -1px;
+  padding: 5vw;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  height: 110vh;
+}
+
+.con2 h2 {
+  font-weight: 900;
+}
+
+.spakle {
+  font-size: 2.5vw;
+  margin-bottom: 1vw;
+}
+
+.con2 span {
+  color: #ff6600;
+}
+
+.con2 > p {
+  margin-bottom: 3vw;
+  font-size: 1vw;
+}
+
+.con2 i {
+  color: #ff6600;
+  font-size: 2vw;
+  margin-right: 1vw;
+}
+
+.test {
+  padding: 3vw;
+  box-sizing: border-box;
+  gap: 8vw;
+  display: flex;
+  justify-content: center;
+}
+
+.fast {
+  position: relative;
+  padding: 3vw 5vw;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  text-align: left;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* after 효과가 바깥으로 나가지 않게 설정 */
+  background-color: #fff;
+  color: #000; /* 기본 텍스트 색상 */
+  transition: color 0.5s; /* 텍스트 색상 변경 부드럽게 */
+}
+
+.fast::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* 초기 상태: 아래쪽 */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6600;
+  transition: top 0.5s; /* 위로 올라오는 애니메이션 */
+  z-index: 0; /* 텍스트보다 아래에 위치 */
+}
+
+.fast:hover::after {
+  top: 0; /* hover 시 위로 올라옴 */
+}
+
+.fast span,
+.fast h3,
+.fast p,
+.fast i,
+.fast .oran_box {
+  position: relative;
+  z-index: 1; /* 가상 요소보다 위에 위치 */
+  transition: color 0.1s; /* 텍스트 색상 부드럽게 변경 */
+}
+
+.fast:hover {
+  color: #fff; /* hover 시 텍스트 색상을 흰색으로 변경 */
+}
+
+.fast:hover i {
+  color: #fff; /* hover 시 아이콘 색상을 흰색으로 변경 */
+}
+
+.fast:hover .oran_box {
+  background-color: #fff;
+  color: #ff6600; /* hover 시 oran_box 내부 색상 변경 */
+}
+
+.con2 .test i {
+  margin-right: 5vw;
+  font-size: 5vw;
+}
+
+.oran_box {
+  margin-top: 1vw;
+  cursor: pointer;
+  background-color: #ff6600;
+  color: #fff;
+  text-align: center;
+  padding: 0.5vw 2vw;
+  font-size: 1.5vw;
+  box-sizing: border-box;
+}
+.detail {
+  position: relative;
+  padding: 3vw 5vw;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  text-align: left;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* after 효과가 바깥으로 나가지 않게 설정 */
+  background-color: #fff;
+  color: #000; /* 기본 텍스트 색상 */
+  transition: color 0.5s; /* 텍스트 색상 변경 부드럽게 */
+}
+
+.detail::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* 초기 상태: 아래쪽 */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6600;
+  transition: top 0.5s; /* 위로 올라오는 애니메이션 */
+  z-index: 0; /* 텍스트보다 아래에 위치 */
+}
+
+.detail:hover::after {
+  top: 0; /* hover 시 위로 올라옴 */
+}
+
+.detail span,
+.detail h3,
+.detail p,
+.detail i,
+.detail .oran_box {
+  position: relative;
+  z-index: 1; /* 가상 요소보다 위에 위치 */
+  transition: color 0.1s; /* 텍스트 색상 부드럽게 변경 */
+}
+
+.detail:hover {
+  color: #fff; /* hover 시 텍스트 색상을 흰색으로 변경 */
+}
+
+.detail:hover i {
+  color: #fff; /* hover 시 아이콘 색상을 흰색으로 변경 */
+}
+
+.detail:hover .oran_box {
+  background-color: #fff;
+  color: #ff6600; /* hover 시 oran_box 내부 색상 변경 */
+}
+
+.con2 li {
+  align-items: center;
+}
+
+.con2 .orngback {
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  padding: 3vw;
+  box-sizing: border-box;
+  border: 1px solid #ff6600;
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+}
+
+.now {
+  letter-spacing: -1px;
+  padding: 3vw 2vw 1vw;
+  box-sizing: border-box;
+  font-size: 2.5vw;
+}
+
+.con2 h6 {
+  margin-right: 10vw;
+  text-align: right;
+  font-size: 1vw;
+  color: #555;
+}
+
+/*con3*/
+
+.con3 {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 3vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f0f0f0;
+}
+
+.con3 h2 {
+  margin-bottom: 2vw;
+  font-weight: 900;
+  font-size: 2vw;
+  letter-spacing: -1px;
+}
+
+.con3 p {
+  margin-bottom: 2vw;
+  font-size: 1.2vw;
+  letter-spacing: -1px;
+}
+
+.con3 span {
+  color: #ff6600;
+}
+
+.con3 ul {
+  align-items: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+}
+
+.con3 i {
+  margin-top: 2.5vw;
+}
+
+.con3 h5 {
+  letter-spacing: -1px;
+  font-size: 1.2vw;
+  font-weight: 700;
+  color: #222;
+}
+
+.con3 ul li {
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  line-height: 2vw;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.con3 ul li i {
+  font-size: 3vw;
+  color: #ff6600;
+}
+
+/*con4*/
+
+.con4 {
+  letter-spacing: -1px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 5vw;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.con4 img {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.con4 li {
+  width: 40%;
+}
+
+.con4 ul {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.con4 h2 {
+  text-align: center;
+  margin-bottom: 1vw;
+  font-size: 2vw;
+}
+
+.con4 p {
+  text-align: center;
+  margin-bottom: 1vw;
+}
+
+.con4 h5 {
+  padding-left: 9.5vw;
+  box-sizing: border-box;
+
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin-bottom: 2vw;
+}
+
+.con4 span {
+  color: #ff6600;
+}
+
+/*con5*/
+
+.con5 {
+  display: flex;
+  justify-content: center;
+  padding: 5vw;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+}
+
+.con5 h5 {
+  padding-left: 3vw;
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin-bottom: 1.5vw;
+}
+
+.con5 p {
+  padding: 2vw 10vw;
+  margin: auto;
+  text-align: center;
+  width: 70%;
+  background-color: #f0f0f0;
+}
+
+/*con6*/
+
+.con6 {
+  letter-spacing: -1px;
+  padding: 2vw;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vw; /* 요소 간의 간격 */
+}
+
+.con6 h2,
+.con6 p,
+.con6 h5 {
+  text-align: center;
+}
+
+.listen {
+  color: #999;
+  padding-left: 18vw;
+  align-items: none;
+  text-align: left;
+}
+
+.listen span {
+  padding: 0.5vw 2vw;
+  border: 1px solid #999;
+}
+
+.listen i {
+  padding: 0.2vw;
+  font-size: 0.8vw;
+}
+
+.back_red {
+  background-color: rgb(255, 219, 219);
+  border: 1.5px solid red !important;
+}
+
+.smile {
+  border: 2px solid #0066ff !important;
+  position: relative;
+  color: #0066ff;
+}
+
+.smile span {
+  left: 10%;
+  position: absolute;
+}
+
+.listen i:nth-child(2) {
+  margin-left: 2vw;
+}
+
+.con6 h5 {
+  padding-left: 18vw;
+  text-align: left;
+}
+
+.con6 img {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px; /* img와 다음 요소 간의 간격 */
+}
+
+.quize {
+  gap: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quize li {
+  width: 30%;
+}
+
+.cir {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px; /* li 간의 간격 */
+  margin-top: 0; /* 위쪽 여백 없애기 */
+}
+
+.cir li {
+  border: 1px solid #ddd;
+  padding: 1vw 0vw;
+  border-radius: 5vw;
+  box-sizing: border-box;
+  width: calc(50% - 10px); /* 여백을 고려한 너비 */
+}
+
+.gray_box {
+  padding: 1.5vw;
+  margin: auto;
+  width: 70%;
+  background-color: #f0f0f0;
+}
+
+.con6 h4 {
+  margin-bottom: 1vw;
+  padding-left: 2.3vw;
+  box-sizing: border-box;
+  color: #0066ff;
+  box-sizing: border-box;
+}
+
+/*con7*/
+
+.con7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.con7 ul:nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+
+.con7 span {
+  color: #ff6600;
+}
+
+.con7 ul:nth-child(1) li {
+  padding: 1vw 9vw;
+  box-sizing: border-box;
+}
+
+.con7 ul:nth-child(1) li:nth-child(2),
+.con7 ul:nth-child(1) li:nth-child(3) {
+  color: #fff;
+  border-radius: 1vw 1vw 0vw 0vw;
+  background-color: #ff6600;
+}
+
+.con7_ul2 {
+  align-items: center;
+  display: flex;
+  gap: 0.5vw;
+  justify-content: center;
+}
+
+.con7_ul2 li:nth-child(1),
+.con7_ul2 li:nth-child(3),
+.con7_ul2 li:nth-child(5) {
+  border-radius: 1vw;
+  width: 25vw;
+  height: 30vw;
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+
+.con7 .back_gray {
+  padding: 0.5vw 1.5vw;
+  border-radius: 3vw;
+  background-color: #555;
+  color: #fff;
+}
+
+.con7 .back_gray2 {
+  margin-top: 5vw;
+}
+
+.con7 i {
+  margin-left: -1vw;
+  position: absolute;
+  font-size: 2vw;
+  color: #aaa;
+}
+
+.none {
+  font-size: 1.3vw;
+}
+
+.con7_ul2 li:nth-child(5) p {
+  color: #0084ff;
+  text-decoration: underline;
+}
+
+/*con8*/
+
+.con8 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 50vh;
+  padding: 5vw;
+  box-sizing: border-box;
+}
+
+.con8 h5 {
+  cursor: pointer;
+  color: #999;
+  margin-left: 4.5vw;
+  margin-bottom: 2vw;
+}
+
+.con8 ul {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.con8 h3 {
+  font-size: 1vw;
+}
+
+.con8 h4 {
+  color: #0084ff;
+}
+
+.con8 ul li {
+  border-radius: 1vw;
+  padding: 2vw;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
 }
 
 /*footer*/
