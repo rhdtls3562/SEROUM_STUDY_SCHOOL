@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>새로움커리큘럼</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/riview.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/f&q.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <ul class="topmenu">
+        <li>
+          <a href="index.html"><img class="logo" src="img/logo.png" /></a>
+        </li>
+        <li><a href="brand.html">브랜드소개</a></li>
+        <li><a href="curriculum.html">새로움커리큘럼</a></li>
+        <li><a href="level.html">레벨테스트</a></li>
+        <li><a href="riview.html">새로움후기</a></li>
+        <li><a href="f&q.html">F&Q/이벤트</a></li>
+        <li>
+          <div class="menu">
+            <span class="menu-global menu-top"></span>
+            <span class="menu-global menu-middle"></span>
+            <span class="menu-global menu-bottom"></span>
+          </div>
+        </li>
+      </ul>
+      <div class="side-menu">
+        <img class="slide_logo" src="img/logo.png" />
+        <ul>
+          <li>
+            <a href="index.html">Home <i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href="brand.html">Brand<i class="fa-solid fa-hospital"></i></a>
+          </li>
+          <li>
+            <a href="curriculum.html"
+              >Curriculum<i class="fa-solid fa-face-smile"></i
+            ></a>
+          </li>
+          <li>
+            <a href="level.html"
+              >Level<i class="fa-solid fa-calendar-check"></i
+            ></a>
+          </li>
+          <li>
+            <a href="riview.html"
+              >Review<i class="fa-solid fa-ranking-star"></i
+            ></a>
+          </li>
+          <li>
+            <a href="f&q.html"
+              >F&Q/Event<i class="fa-solid fa-book-open-reader"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="social">
+          <a
+            href="https://open.kakao.com/o/shy82g3g"
+            target="_blank"
+            class="kakao-button"
+            ><img src="img/kakao.png"
+          /></a>
+          <a
+            href="https://mail.naver.com/write/?to=rhdtls3562@naver.com"
+            target="_blank"
+            class="email-button"
+            ><img src="img/email.png"
+          /></a>
+          <a href="tel:01012345678" class="call-button"
+            ><img src="img/call.png"
+          /></a>
+        </div>
+      </div>
+      <!-- 어두운 오버레이 -->
+      <div class="overlay"></div>
+    </div>
+    <div id="visual">
+      <img src="img/f&q_model.png" />
+      <img src="img/f&q_txt.png" />
+      <img src="img/f&q_txt2.png" />
+      <img src="img/f&q_txt3.png" />
+    </div>
+    <div id="container">
+      <a href="#" class="go-top"><i class="fa-solid fa-caret-up"></i></a>
+      <section class="con1">
+        <h2>FAQ</h2>
+        <h5>HOME > <span>F&A</span></h5>
+        <ul class="quastion">
+          <li>자주하는 질문</li>
+          <li>내 강의실 이용안내</li>
+          <li>강의실 앱 이용안내</li>
+        </ul>
+        <ul class="search">
+          <li><h3>검색</h3></li>
+          <li>
+            <h5>
+              검색어를 입력해 주세요.<i
+                class="fa-solid fa-magnifying-glass"
+              ></i>
+            </h5>
+          </li>
+        </ul>
+      </section>
+      <section class="con2">
+        <h3>자주하는 질문</h3>
+        <ul class="quastion_box">
+          <li>베스트</li>
+          <li>수강문의</li>
+          <li>결제문의</li>
+          <li>동영상문의</li>
+          <li>모바일문의</li>
+          <li>환불문의</li>
+          <li>배송문의</li>
+          <li>스마트 문의</li>
+          <li>탭 문의</li>
+          <li>기타문의</li>
+        </ul>
+        <ul class="quastion_list">
+          <li><span>Q</span> 1. 쿠폰 등록은 어떻게 하나요?</li>
+          <li>
+            <span>Q</span> 2. 새로움 수강중인 강의 종료 후 다른 차시의 강의 재생
+            시 '현재 삽입된 SD카드에서 지원되지 않는 강의입니다' 라는 팝업이
+            뜹니다.
+          </li>
+          <li><span>Q</span> 3. 새로움 앱 설치 후 실행이 되지않습니다.</li>
+          <li><span>Q</span> 4. 환불 신청은 어떻게 하나요?</li>
+          <li><span>Q</span> 5. 회원가입은 어떻게 하나요?</li>
+          <li>
+            <span>Q</span> 6. 강좌 수강 및 학습 중 궁금한 점은 어디에 질문할 수
+            있나요?
+          </li>
+          <li><span>Q</span> 7. 연장/제수강 신청은 어떻게 하나요?</li>
+          <li><span>Q</span> 8. 결재 후 나중에 수강해도 되나요?</li>
+          <li>
+            <span>Q</span> 9. A/S신청 시 상품을 다시 받는데까지 얼마나 걸리나요?
+          </li>
+          <li>
+            <span>Q</span> 10. 홈쇼핑,소셜 등에서 구매한 쿠폰 등록은 어떻게
+            하죠?
+          </li>
+          <li><span>Q</span> 11. 반품하려는 상품은 어떻게 보내야 하나요?</li>
+          <li><span>Q</span> 12. 강의 환불 규정이 궁금해요.</li>
+          <li><span>Q</span> 13. 기기 환불 규정이 궁금해요.</li>
+          <li><span>Q</span> 14. 도서 환불 규정이 궁금해요.</li>
+          <li>
+            <span>Q</span> 15. 신청 연락처를 잘못 적었어요. 어떻게 수정하나요?
+          </li>
+        </ul>
+      </section>
+      <section class="con3">
+        <p>찍고 따라하면 영어가 된다!</p>
+        <h2>새로움 도서 맞춤 커리큘럼</h2>
+        <img class="book" src="img/sec06_book.png" />
+        <img class="pen" src="img/sec06_pen.png" />
+        <div class="books">
+          <img src="img/sec06_rolling.png" alt="Books" />
+          <img src="img/sec06_rolling.png" alt="Books" />
+        </div>
+      </section>
+      <section class="con4">
+        <h2>이벤트</h2>
+        <p>새로움에서 진행중인 이벤트를 확인해보세요.</p>
+        <ul>
+          <li><img src="img/event1.png" /></li>
+          <li><img src="img/event2.png" /></li>
+          <li><img src="img/event3.png" /></li>
+          <li><img src="img/event4.png" /></li>
+          <li><img src="img/event5.png" /></li>
+          <li><img src="img/event6.png" /></li>
+          <li><img src="img/event7.png" /></li>
+          <li><img src="img/event8.png" /></li>
+          <li><img src="img/event9.png" /></li>
+        </ul>
+      </section>
+    </div>
+    <div id="footer">
+      <ul class="fot1">
+        <li>
+          <span>고객센터 공지사항</span> · [공지] 케이뱅크 전산시스템 정기점검
+          안내(12/8 00~08시)ⓝ
+        </li>
+        <li>출제자 모집</li>
+        <li>강사모집</li>
+        <li>서비스 제안하기</li>
+      </ul>
+      <img class="logo" src="img/logo.png" />
+      <ul class="fot2">
+        <ul class="fot4">
+          <li>
+            <ul class="fot3">
+              <li>회사소개</li>
+              <li>개인정보처리방침</li>
+              <li>이용약관</li>
+              <li>저작권 침해 신고</li>
+              <li>사이트맵</li>
+              <li>찾아오시는길</li>
+              <li>제휴문의</li>
+            </ul>
+          </li>
+          <li>
+            주소 : 서울시 서초구 방배로 181 (방배동. 단우빌딩 6,7,8층)
+            (주)디지털대성 l 대표이사 : 김희선 사업자 등록번호 : 114-81-96124 l
+            통신판매업 신고증 : 2011-서울 서초 - 0170호 정보조회
+            학원설립·운영등록번호 : 제10281호 디지털대성원격학원 정보조회
+            호스팅서비스 사업자 : ㈜새로움 l 개인정보보호 책임자 : 김승우
+            (주)디지털대성 고객센터 : 02-5252-110 l 이메일 : help@mimacstudy.com
+            <span> copyright since2012 (주)새로움 All rights reserved. </span>
+          </li>
+        </ul>
+        <li>
+          <ul class="fot5">
+            <li><img src="img/icon_facebook.svg" /></li>
+            <li><img src="img/icon_instagram.svg" /></li>
+            <li><img src="img/icon_youtube.svg" /></li>
+            <li><img src="img/icon_naverblog.svg" /></li>
+            <li><img src="img/icon_naverpost.svg" /></li>
+          </ul>
+          <ul class="fot6">
+            <li><img src="img/img_escrowlogo.png" /></li>
+            <li><img src="img/img_isms_logo.png" /></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

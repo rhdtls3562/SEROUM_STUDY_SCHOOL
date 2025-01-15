@@ -10,7 +10,7 @@ body {
   top: 0; /* 화면 상단 고정 */
   left: 0;
   width: 100%; /* 너비 100% */
-  background-color: #ff6600; /* 약간 투명한 배경 */
+  background-color: #ff8b1e; /* 약간 투명한 배경 */
   z-index: 10; /* 배경보다 위에 오도록 설정 */
 }
 
@@ -268,6 +268,285 @@ body {
   bottom: 15%;
   left: 50%;
   transform: translate(-50%);
+}
+
+/*container*/
+
+#container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/*con1*/
+
+.con1 {
+  padding: 5vw;
+  box-sizing: border-box;
+  letter-spacing: -1px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.con1 h2 {
+  font-size: 2vw;
+  text-align: center;
+  margin-bottom: 5vw;
+}
+
+.con1 h2 span {
+  color: #ff8b1e;
+}
+
+.con1 img {
+  width: 5vw;
+  object-fit: cover;
+  height: 5vw;
+  border-radius: 0.5vw;
+}
+
+.review_img > li {
+  overflow: hidden;
+  position: relative;
+  width: 22vw;
+  padding: 2vw;
+  box-sizing: border-box;
+  border-radius: 0.5vw;
+  border: 1px solid #ddd;
+}
+
+.con1 h4 {
+  color: #ff8b1e;
+  margin-bottom: 1vw;
+  width: 90%;
+}
+
+.con1 h5 {
+  margin-bottom: 2vw;
+  font-weight: normal;
+}
+
+.con1 i {
+  color: #222;
+  position: absolute;
+  right: 2vw;
+  top: 2vw;
+  font-size: 2vw;
+  margin-left: 1vw;
+}
+
+.con1 p {
+  margin-bottom: 2vw;
+}
+
+.more_box {
+  cursor: pointer;
+  text-align: center;
+  line-height: 5vw;
+  color: #fff;
+  background-color: #222;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 0.5vw;
+}
+
+.plus_box {
+  cursor: pointer;
+  right: -1px;
+  bottom: -1px;
+  position: absolute;
+  width: 2vw;
+  font-weight: 700;
+  height: 2vw;
+  text-align: center;
+  line-height: 2vw;
+  border: 1px solid #ddd;
+}
+
+.review_img_img {
+  display: flex;
+  gap: 1vw;
+}
+
+.review_img {
+  gap: 2vw;
+  display: flex;
+  justify-content: center;
+}
+
+/*con2*/
+
+.con2 {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background-image: url(../img/level_banner_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.con2 img:nth-child(1) {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.con2 img:nth-child(2) {
+  position: absolute;
+  top: 0%;
+  width: 30%;
+  left: 30%;
+}
+
+.con2 img:nth-child(3) {
+  position: absolute;
+  top: 0%;
+  width: 30%;
+  left: 40%;
+}
+
+.con2 img:nth-child(4) {
+  position: absolute;
+  top: 0%;
+  width: 28%;
+  right: 0%;
+}
+
+/*con3*/
+
+.con3 {
+  letter-spacing: -1px;
+  padding: 5vw;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.con3 .top {
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top li {
+  cursor: pointer;
+}
+
+.top_left {
+  display: flex;
+  gap: 10px;
+}
+
+.top_left li:nth-child(1) {
+  color: #ff8b1e;
+  font-weight: 700;
+}
+
+.top_right {
+  display: flex;
+  gap: 10px;
+}
+
+.top_right li:nth-child(1) {
+  cursor: pointer;
+  border: 1px solid #555;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  box-sizing: border-box;
+}
+
+.con3 h5 {
+  margin-top: 1vw;
+}
+
+.con3 h6 {
+  font-weight: normal;
+}
+
+.con3 p {
+  line-height: 2vw;
+  margin-bottom: 2vw;
+  width: 80%;
+  text-align: justify;
+}
+
+.con3 h3 {
+  margin-bottom: 1vw;
+  font-size: 1vw;
+}
+
+.con3 h3 span {
+  font-weight: 400;
+  margin-left: 1vw;
+}
+
+.sns li {
+  cursor: pointer;
+  border: 1px solid #aaa;
+  padding: 0.5vw 1vw;
+}
+
+.sns li span {
+  color: #ff8b1e;
+}
+
+.fa-star {
+  color: #ff8b1e;
+}
+
+.fa-star:nth-child(5) {
+  color: #ddd;
+}
+
+.top_right li:nth-child(2) {
+  cursor: pointer;
+  background-color: #ff8b1e;
+  border-radius: 0.5vw;
+  color: #fff;
+  padding: 0.5vw 1vw;
+  box-sizing: border-box;
+}
+
+.review_imges {
+  display: flex;
+  gap: 1vw;
+}
+
+.review_imges img {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  border-radius: 0.5vw;
+  width: 5vw;
+  height: 5vw;
+  object-fit: cover;
+}
+
+.con3 h4 {
+  margin-bottom: 1vw;
+  color: #ff8b1e;
+  font-weight: 700;
+  font-size: 1vw;
+}
+
+.sns {
+  display: flex;
+  gap: 1vw;
+}
+
+.review_best {
+  padding-bottom: 2vw;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+}
+
+.level_menu {
+  margin-top: 1vw;
+  width: 20vw;
 }
 
 /*footer*/

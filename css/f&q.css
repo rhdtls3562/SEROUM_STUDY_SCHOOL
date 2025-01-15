@@ -1,0 +1,601 @@
+body {
+  overflow: hidden;
+  font-family: "Noto Sans KR", serif !important;
+  box-sizing: border-box;
+}
+
+/* header */
+#header {
+  position: absolute; /* 절대 위치로 설정 */
+  top: 0; /* 화면 상단 고정 */
+  left: 0;
+  width: 100%; /* 너비 100% */
+  background-color: #ff8b1e; /* 약간 투명한 배경 */
+  z-index: 10; /* 배경보다 위에 오도록 설정 */
+}
+
+.topmenu {
+  font-size: 1vw;
+  align-items: center;
+  padding: 0.3vw 3vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topmenu li {
+  font-size: 0.8vw;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.topmenu .logo {
+  width: 70%;
+}
+
+.topmenu i {
+  font-size: 1.5vw;
+}
+
+.topmenu a {
+  color: #fff;
+}
+
+.menu {
+  z-index: 999;
+  cursor: pointer;
+  margin: 0 auto;
+  padding-left: 1.25em;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+.menu-global {
+  border-radius: 3vw;
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 5.5px solid white;
+  width: 100%;
+  transition: 0.55s;
+}
+.menu-top {
+  top: 0;
+}
+.menu-middle {
+  top: 13px;
+}
+.menu-bottom {
+  top: 26px;
+}
+.menu-top-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(50deg);
+  transition: 0.55s 0.5s;
+}
+.menu-middle-click {
+  opacity: 0;
+}
+.menu-bottom-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(-410deg);
+  transition: 0.55s 0.5s;
+}
+
+/* 사이드 메뉴 */
+.side-menu {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: -300px; /* 숨김 상태 */
+  width: 300px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
+  transition: transform 0.4s ease-in-out; /* 부드러운 애니메이션 */
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.5); /* 그림자 효과 */
+  z-index: 999;
+  padding-top: 50px; /* 메뉴와 상단 여백 */
+}
+
+.slide_logo {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  width: 50%;
+}
+
+.side-menu.open {
+  transform: translateX(300px); /* 메뉴가 오른쪽으로 밀려 나오게 */
+}
+
+/* 메뉴 리스트 스타일 */
+.side-menu ul {
+  padding: 1vw;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.side-menu ul li {
+  border-bottom: 2px solid #fff;
+  padding: 1vw;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* 배경 색과 트랜지션 효과 */
+}
+.side-menu i {
+  position: absolute;
+  right: 10%;
+}
+
+.side-menu ul li:hover {
+  transform: scale(1.1); /* 메뉴 아이템 크기 살짝 확대 */
+}
+
+.side-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  font-weight: 500; /* 글자 두께 */
+}
+
+.social {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social img:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.social a img {
+  width: 3vw;
+}
+
+/* 어두운 오버레이 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 998;
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 사이드 메뉴 애니메이션 */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}
+
+/* visual */
+#visual {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/f&q_back.jpg);
+  background-size: cover;
+}
+
+#visual img:nth-child(1) {
+  position: absolute;
+  right: 5%;
+  bottom: 0%;
+  width: 35%;
+}
+
+#visual img:nth-child(2) {
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+
+#visual img:nth-child(3) {
+  width: 50%;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+
+#visual img:nth-child(4) {
+  width: 30%;
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+}
+
+.go-top {
+  z-index: 1000;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(34, 34, 34, 0.5); /* 투명도를 적용한 배경색 */
+  font-size: 2vw;
+  width: 4vw;
+  height: 4vw;
+  line-height: 4.1vw;
+  text-align: center;
+  border-radius: 50px; /* 버튼을 둥글게 */
+  display: none; /* 초기에는 숨김 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 */
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* 부드러운 전환 효과 */
+}
+
+.go-top:hover {
+  background-color: #222; /* 호버 시 더 진한 색상 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* 호버 시 그림자 강조 */
+  transform: translateY(-5px); /* 호버 시 살짝 위로 올라가는 애니메이션 */
+}
+
+/*container*/
+
+#container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/*con1*/
+
+.con1 {
+  letter-spacing: -1px;
+  width: 100%;
+  padding: 3vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.con1 > h2 {
+  margin-bottom: 1vw;
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+
+.con1 > h5 {
+  margin-bottom: 3vw;
+  font-weight: 400;
+  text-align: right;
+}
+
+.con1 > h5 span {
+  font-weight: 900;
+  color: #ff8b1e;
+}
+
+.quastion {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #ff8b1e;
+}
+
+.quastion li {
+  box-sizing: border-box;
+  padding: 1vw 11.7vw;
+}
+
+.quastion li:nth-child(1) {
+  color: #fff;
+  background-color: #ff8b1e;
+}
+
+.quastion li:nth-child(2),
+.quastion li:nth-child(3) {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  margin-left: -1px; /* 겹침 방지 */
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  margin-top: 3vw;
+  padding: 3vw;
+  box-sizing: border-box;
+  border: 5px solid #f0f0f0;
+}
+
+.search h3 {
+  font-weight: 500;
+}
+
+.search i {
+  color: #555;
+  font-size: 1.5vw;
+  padding-left: 30vw;
+}
+
+.search h5 {
+  font-weight: normal;
+  color: #aaa;
+  padding-bottom: 0.5vw;
+  border-bottom: 2px solid #aaa;
+}
+
+/*con2*/
+
+.con2 {
+  letter-spacing: -1px;
+  width: 100%;
+  padding: 5vw;
+  box-sizing: border-box;
+}
+
+.con2 h3 {
+  color: #ff8b1e;
+  margin-bottom: 2vw;
+}
+
+.quastion_box {
+  margin-bottom: 2vw;
+  display: flex;
+  justify-content: center;
+}
+
+.quastion_box li {
+  cursor: pointer;
+  text-align: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  width: 10%;
+  height: 3vw;
+  margin-left: -1px;
+  line-height: 3vw;
+}
+
+.quastion_box li:nth-child(1) {
+  margin-right: 1px;
+  background-color: #ffb26a;
+  color: #fff;
+  border: 1px solid #ff8b1e;
+}
+
+.quastion_list li {
+  cursor: pointer;
+  padding: 0.5vw 1.5vw;
+  border-bottom: 1px solid #ddd;
+}
+
+.quastion_list span {
+  font-weight: 700;
+  font-size: 1.5vw;
+  margin-right: 2vw;
+  color: #ff8b1e;
+}
+
+/*con3*/
+
+.con3 {
+  padding: 5vw;
+  box-sizing: border-box;
+  background-size: contain;
+  background-image: url(../img/sec06_bg.jpg);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.book {
+  z-index: 998;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%);
+  width: 55%;
+  position: absolute;
+}
+
+.pen {
+  z-index: 999;
+  right: 25%;
+  bottom: 40%;
+  transform: translate(-50%);
+  width: 12%;
+  position: absolute;
+  animation: penAction 2s infinite;
+}
+
+@keyframes penAction {
+  0%,
+  25%,
+  40%,
+  90%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  20%,
+  35% {
+    transform: translate3d(10px, -10px, 0);
+  }
+}
+
+.books {
+  display: flex; /* 이미지를 한 줄로 배치 */
+
+  width: 100%; /* 화면 전체를 차지 */
+}
+
+.books img {
+  transform: translate(0%, 165%);
+  flex-shrink: 0; /* 이미지 크기 축소 방지 */
+  width: auto; /* 이미지 비율 유지 */
+  height: 100%; /* 높이를 부모 요소에 맞춤 */
+}
+
+@keyframes bg_flow {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.books {
+  animation: bg_flow 20s linear infinite; /* 무한 반복 애니메이션 */
+}
+
+.con3 p,
+.con3 h2 {
+  text-align: center;
+}
+
+/*con4*/
+
+.con4 {
+  padding: 5vw;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.con4 h2,
+.con4 p {
+  text-align: center;
+}
+
+.con4 ul {
+  margin-top: 3vw;
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.con4 ul li {
+  cursor: pointer;
+  width: calc(100% / 3 - 2vw);
+  transition: 0.5s;
+}
+
+.con4 ul li:hover {
+  transform: scale(1.05);
+}
+
+.con4 img {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  width: 100%; /* li 요소의 너비에 맞게 이미지 크기 조정 */
+  max-width: 100%; /* 이미지가 부모 요소보다 커지지 않도록 제한 */
+}
+
+/*footer*/
+
+#footer {
+  height: 50vh;
+  width: 100%;
+}
+
+#footer span {
+  font-weight: 700;
+}
+
+.fot1 {
+  padding: 1vw;
+  background-color: #ddd;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fot1 li {
+  cursor: pointer;
+}
+
+#footer .logo {
+  padding: 2vw 2vw 1vw 10vw;
+  box-sizing: border-box;
+  width: 20%;
+  filter: grayscale(60%) brightness(50%);
+}
+
+.fot2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 0vw 10vw;
+  box-sizing: border-box;
+}
+
+.fot6 {
+  display: flex;
+  justify-content: right;
+}
+
+.fot2 li {
+  width: 60%;
+}
+
+.fot4 > li {
+  font-size: 1vw;
+  line-height: 1.5vw;
+  color: #555;
+}
+
+.fot4 > li span {
+  display: block;
+  padding-top: 3vw;
+}
+
+.fot3 {
+  display: flex;
+  justify-content: left;
+  gap: 2vw;
+}
+
+.fot3 li {
+  text-wrap: nowrap;
+  cursor: pointer;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.fot5 {
+  margin-bottom: 2vw;
+  display: flex;
+  gap: 1vw;
+  justify-content: left;
+}
+
+.fot5 li {
+  cursor: pointer;
+}
