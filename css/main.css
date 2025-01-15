@@ -206,14 +206,29 @@ body {
   background-color: #ff7b00;
 }
 
+/* 공통 애니메이션 설정 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* 처음에 숨겨짐 */
+  }
+  100% {
+    opacity: 1; /* 최종적으로 보이게 됨 */
+  }
+}
+
+/* .text 요소 */
 .text {
   width: 50%;
   position: absolute;
   top: 50%;
   left: 33%;
   transform: translate(-50%, -50%);
+  opacity: 0; /* 처음에는 보이지 않게 */
+  animation: fadeIn 1s ease-out forwards; /* 애니메이션 적용 */
+  animation-delay: 0.5s; /* 0.5초 후에 나타나기 시작 */
 }
 
+/* .bubble 요소 */
 .bubble {
   cursor: pointer;
   width: 20%;
@@ -221,26 +236,37 @@ body {
   bottom: 10%;
   left: 33%;
   transform: translate(-50%, -50%);
-  transition: transform 0.5s; /* 마우스 hover 효과도 부드럽게 */
+  opacity: 0; /* 처음에는 보이지 않게 */
+  animation: fadeIn 1s ease-out forwards; /* 애니메이션 적용 */
+  animation-delay: 1s; /* 1초 후에 나타나기 시작 */
+  transition: transform 0.5s; /* hover 효과도 부드럽게 */
 }
 
 .bubble:hover {
-  transform: translate(-50%, -50%) scale(1.1); /* 기존 translate 유지하며 크기 확대 */
+  transform: translate(-50%, -50%) scale(1.1); /* hover 시 크기 확대 */
 }
 
+/* .txt 요소 */
 .txt {
   width: 30%;
   position: absolute;
   top: 20%;
   left: 33%;
   transform: translate(-50%, -50%);
+  opacity: 0; /* 처음에는 보이지 않게 */
+  animation: fadeIn 1s ease-out forwards; /* 애니메이션 적용 */
+  animation-delay: 1.5s; /* 1.5초 후에 나타나기 시작 */
 }
 
+/* .model 요소 */
 .model {
   position: absolute;
   bottom: 0;
   right: 5%;
   width: 33%;
+  opacity: 0; /* 처음에는 보이지 않게 */
+  animation: fadeIn 1s ease-out forwards; /* 애니메이션 적용 */
+  animation-delay: 2s; /* 2초 후에 나타나기 시작 */
 }
 
 .go-top {
@@ -339,8 +365,7 @@ body {
   font-size: 1vw;
 }
 
-/*con2*/
-
+/* con2 요소 */
 .con2 {
   display: flex;
   justify-content: center;
@@ -353,6 +378,19 @@ body {
   height: 100vh;
 }
 
+/* 공통 애니메이션 설정 */
+@keyframes showing {
+  0% {
+    opacity: 0; /* 처음에 숨겨짐 */
+    transform: translateY(20px); /* 아래에서 올라오는 효과 */
+  }
+  100% {
+    opacity: 1; /* 최종적으로 보이게 됨 */
+    transform: translateY(0); /* 원래 위치로 */
+  }
+}
+
+/* .con2 h2 요소 */
 .con2 h2 {
   margin-bottom: 3vw;
   letter-spacing: -1px;
@@ -360,15 +398,63 @@ body {
   font-size: 2.5vw;
   width: 23%;
   text-align: center;
+  opacity: 0; /* 처음에는 보이지 않게 */
 }
 
+/* .con2 span 요소 */
 .con2 span {
   color: #ff7b00;
+  opacity: 0; /* 처음에는 보이지 않게 */
 }
 
+/* .con2 img 요소 */
 .con2 img {
   width: 60%;
   padding: 1vw;
+  opacity: 0; /* 처음에는 보이지 않게 */
+}
+
+/* 초기 상태, 숨겨진 상태 */
+.con2 h2,
+.con2 span,
+.con2 img {
+  opacity: 0; /* 처음에는 보이지 않게 */
+  transform: translateY(20px); /* 아래에서 올라오는 효과 */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* 애니메이션 효과 */
+  transition-delay: 0s; /* 기본 딜레이 값 */
+}
+
+/* show 클래스가 추가되었을 때 */
+.con2 h2.show,
+.con2 span.show,
+.con2 img.show {
+  opacity: 1; /* 보이게 함 */
+  transform: translateY(0); /* 원래 위치로 돌아오며 나타남 */
+}
+
+/* 각 요소에 딜레이를 설정 */
+.con2 h2.show {
+  transition-delay: 0.5s;
+}
+
+.con2 span.show {
+  transition-delay: 1s;
+}
+
+.con2 img:nth-child(2).show {
+  transition-delay: 1.5s;
+}
+
+.con2 img:nth-child(3).show {
+  transition-delay: 2s;
+}
+
+.con2 img:nth-child(4).show {
+  transition-delay: 2.5s;
+}
+
+.con2 img:nth-child(5).show {
+  transition-delay: 3s;
 }
 
 /*con3*/

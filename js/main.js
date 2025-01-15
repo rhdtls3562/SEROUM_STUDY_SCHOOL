@@ -246,4 +246,22 @@ $(document).ready(function () {
     // 해당 인덱스의 이미지를 표시합니다
     images[index].style.display = "block";
   }
+  $(document).ready(function () {
+    // 윈도우 스크롤 시 이벤트 핸들러
+    $(window).on("scroll", function () {
+      // 각 요소들이 화면에 보일 때
+      $(".con2 h2, .con2 span, .con2 img").each(function () {
+        var elementOffset = $(this).offset().top; // 요소의 위치
+        var windowHeight = $(window).scrollTop() + $(window).height(); // 현재 스크롤 위치 + 윈도우 높이
+
+        // 요소가 화면에 80% 이상 들어왔을 때
+        if (elementOffset < windowHeight * 1) {
+          $(this).addClass("show"); // show 클래스 추가하여 애니메이션 실행
+        }
+      });
+    });
+
+    // 페이지 로드 시 바로 애니메이션 체크
+    $(window).trigger("scroll");
+  });
 });
